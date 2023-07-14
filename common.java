@@ -19,7 +19,7 @@ public class AlgorithmClassic {
     }
  
     /**
-     * 选择排序
+     * 选择排序,速度一般
      * 
      * @return
      */
@@ -44,6 +44,7 @@ public class AlgorithmClassic {
     public static int[] sortInsert(int[] datas) {
         for (int i = 1; i < datas.length; i++) {
             int j = i - 1;
+            //int m = j;
             AlgorithmUtil.temp = datas[i];
             for (; j >= 0 && AlgorithmUtil.temp < datas[j]; j--) {
                 datas[j + 1] = datas[j];
